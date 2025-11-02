@@ -533,6 +533,63 @@ header {
 .section-header {
     text-align: center;
     margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.section-header-content {
+    flex: 1;
+    text-align: center;
+}
+
+/* Toggle Button - Hidden on Desktop */
+.section-toggle {
+    display: none;
+    background: transparent;
+    border: 2px solid var(--primary-red);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+    color: var(--primary-red);
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0;
+}
+
+.section-toggle:hover {
+    background-color: var(--primary-red);
+    color: var(--white);
+    transform: rotate(90deg);
+}
+
+.section-toggle.active {
+    transform: rotate(90deg);
+}
+
+.section-toggle.active .toggle-icon::before {
+    content: '−';
+}
+
+.section-toggle .toggle-icon::before {
+    content: '+';
+}
+
+.toggle-icon {
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+/* Section Content - Always visible on desktop */
+.section-content {
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+    overflow: hidden;
 }
 
 .section-label {
@@ -987,6 +1044,52 @@ footer {
     .hero-action-btn {
         padding: 0.65rem 1.25rem;
         font-size: 0.9rem;
+    }
+}
+
+/* Mobile Toggle Functionality */
+@media (max-width: 768px) {
+    /* Show toggle buttons on mobile */
+    .section-toggle {
+        display: flex;
+    }
+
+    .section-header {
+        text-align: left;
+        cursor: pointer;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        background-color: rgba(255, 255, 255, 0.05);
+        border-radius: 0.5rem;
+        transition: background-color 0.3s ease;
+    }
+
+    .section-header:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .section-header-content {
+        text-align: left;
+    }
+
+    /* Default collapsed state on mobile */
+    .section-content {
+        max-height: 0;
+        opacity: 0;
+        margin-bottom: 0;
+        overflow: hidden;
+    }
+
+    /* Expanded state */
+    .section-content.expanded {
+        max-height: 5000px;
+        opacity: 1;
+        margin-bottom: 2rem;
+    }
+
+    /* Smooth transition */
+    .section-content {
+        transition: max-height 0.5s ease, opacity 0.4s ease, margin-bottom 0.3s ease;
     }
 }
 
