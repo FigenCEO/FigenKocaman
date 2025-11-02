@@ -3,47 +3,353 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Figen Kocaman</title>
+    <title>Figen Kocaman | Founder & CEO - Global Bridging</title>
+    <meta name="description" content="Figen Kocaman - Founder & CEO of Global Bridging, expert international business consulting connecting MENA region with global markets">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav class="nav-container">
-            <div class="logo">Figen Kocaman</div>
+            <div class="logo">Figen Kocaman, Founder & CEO</div>
             <ul class="nav-menu">
                 <li><a href="#about">About</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#career">Career</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Welcome to Figen Kocaman</h1>
-                <p class="hero-subtitle">Your trusted partner for excellence</p>
-                <a href="#contact" class="cta-button">Get in Touch</a>
+        <!-- Hero Section -->
+        <section class="hero-centered">
+            <div class="hero-centered-content">
+                <h1 class="hero-centered-title">Figen Kocaman</h1>
+                
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-container-centered">
+                        <img src="Figen.png" alt="Figen Kocaman" class="hero-image-centered">
+                    </div>
+                </div>
+
+                <p class="hero-centered-description">Founder & CEO with 20+ years driving successful M&A transactions and commercial bridges for Fortune 500 companies and growing businesses across GCC, India, and Turkey, combining strategic expertise with practical leadership to unlock hidden value and drive superior ROI and operational excellence.</p>
+
+                <!-- Stats Cards -->
+                <div class="hero-stats-grid">
+                    <div class="hero-stat-card">
+                        <div class="hero-stat-number">20+</div>
+                        <div class="hero-stat-label">Years Experience</div>
+                    </div>
+                    <div class="hero-stat-card">
+                        <div class="hero-stat-number">100+</div>
+                        <div class="hero-stat-label">Successful Projects</div>
+                    </div>
+                    <div class="hero-stat-card">
+                        <div class="hero-stat-number">6</div>
+                        <div class="hero-stat-label">Capital Market Licenses</div>
+                    </div>
+                    <div class="hero-stat-card">
+                        <div class="hero-stat-number">3</div>
+                        <div class="hero-stat-label">Regional Operations</div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="hero-action-buttons">
+                    <a href="#about" class="hero-action-btn">About</a>
+                    <a href="#contact" class="hero-action-btn hero-action-btn-primary">Contact</a>
+                    <a href="#expertise" class="hero-action-btn">Expertise</a>
+                    <a href="#career" class="hero-action-btn">Career</a>
+                    <a href="#education" class="hero-action-btn">Education</a>
+                    <div class="hero-action-btn qr-code-trigger" onclick="document.getElementById('qr-modal').style.display='flex'">QR Code</div>
+                </div>
+            </div>
+
+            <!-- QR Code Modal -->
+            <div id="qr-modal" class="qr-modal" onclick="this.style.display='none'">
+                <div class="qr-modal-content" onclick="event.stopPropagation()">
+                    <span class="qr-modal-close" onclick="document.getElementById('qr-modal').style.display='none'">&times;</span>
+                    <h3>Scan to Save Contact</h3>
+                    <div class="qr-code-container-modal">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=BEGIN%3AVCARD%0AVERSION%3A3.0%0AFN%3AFigen%20Kocaman%0AN%3AKocaman%3BFigen%3B%3B%3B%0AORG%3AGLOBAL%20BRIDGING%20L.L.C-FZ%0AROLE%3AFounder%20%26%20CEO%0ATITLE%3AFounder%20%26%20CEO%0AEMAIL%3BTYPE%3DINTERNET%3BPREF%3Afigen%40gbmena.com%0ATEL%3BTYPE%3DCELL%2CVOICE%3A%2B971%2050%20207%204412%0ATEL%3BTYPE%3DCELL%2CVOICE%3A%2B966%2055%20412%204554%0ATEL%3BTYPE%3DCELL%2CVOICE%3A%2B905325527961%0AURL%3BTYPE%3DWORK%3Ahttps%3A//www.gbmena.com%0AURL%3BTYPE%3DWORK%3Ahttps%3A//www.ggbsa.com%0AURL%3BTYPE%3DWORK%3Ahttps%3A//www.gbturkey.com%0AADR%3BTYPE%3DWORK%3BLABEL%3D%22Business%20Center%201%2C%20M%20Floor%2C%20The%20Meydan%20Hotel%2C%20Nad%20Al%20Sheba%2C%20Dubai%22%3A%3B%3BBusiness%20Center%201%3BM%20Floor%3BThe%20Meydan%20Hotel%3BNad%20Al%20Sheba%3BDubai%3B%3BUnited%20Arab%20Emirates%0ANOTE%3AGlobal%20Bridging%20LLC-FZ%20%7C%20Founder%20%26%20CEO%20%7C%2020%2B%20years%20combined%20experience%20%7C%20Expert%20international%20business%20consulting%20connecting%20MENA%20region%20with%20global%20markets%20%7C%20Strategic%20partnerships%20%7C%20M%26A%20advisory%20%7C%20Fundraising%20%7C%20Business%20development%20%7C%20Bogazici%20University%20Executive%20MBA%20%7C%206%20Capital%20Market%20licenses%20%7C%20Websites%3A%20www.gbmena.com%20%28UAE%29%2C%20www.ggbsa.com%20%28Saudi%29%2C%20www.gbturkey.com%20%28Turkiye%29%0AEND%3AVCARD&color=C1272D&t=1234567890" 
+                             alt="QR Code - Scan to save contact" 
+                             class="qr-code-image-modal">
+                    </div>
+                    <p class="qr-instruction-modal">Scan with your phone to save contact details</p>
+                </div>
             </div>
         </section>
 
+        <!-- Key Statistics -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">20+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">Successful Projects</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">6</div>
+                        <div class="stat-label">Capital Market Licenses</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Regional Operations</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
         <section id="about" class="about-section">
             <div class="container">
-                <h2>About</h2>
-                <p>Learn more about Figen Kocaman and the services we provide.</p>
+                <div class="section-header">
+                    <span class="section-label">ABOUT</span>
+                    <h2>Your Strategic Partner Connecting Global Markets</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Empowering Businesses to Reach Their Full Potential</h3>
+                        <p>Figen Kocaman is a highly accomplished Consultant with extensive experience in Strategy, Operations, Finance, Accounting and Management Consultancy. She demonstrates an outstanding record of achievement within origination, design and implementation of M&A Transactions and Commercial Bridges.</p>
+                        <p>Well networked in Kingdom of Saudi Arabia (KSA), United Arab Emirates (UAE), other GCC Countries and India, Figen specializes in M&A Transactions, presenting consultancy services to expand clients' business by granting licenses and franchises, and introducing potential investors for opportunities in Retail Sectors with Turkish leading brands for expanding their presence throughout GCC.</p>
+                        <p class="quote-text">"Dedicated to empowering businesses with strategic guidance and innovative solutions."</p>
+                    </div>
+                </div>
             </div>
         </section>
 
+        <!-- Mission Section -->
+        <section class="mission-section">
+            <div class="container">
+                <div class="mission-content">
+                    <div class="mission-text">
+                        <span class="section-label">OUR MISSION</span>
+                        <h2>Empowering Businesses to Reach Their Full Potential</h2>
+                        <p>Our mission is to empower businesses to reach their full potential by providing expert guidance and innovative solutions. We are committed to helping our clients succeed and thrive in today's competitive market through strategic advisory, deep industry expertise, and unwavering dedication to excellence.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expertise Section -->
+        <section id="expertise" class="expertise-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">EXPERTISE</span>
+                    <h2>Key Areas of Expertise</h2>
+                </div>
+                <div class="expertise-grid">
+                    <div class="expertise-card">
+                        <div class="expertise-icon">💼</div>
+                        <h3>M&A Consultancy</h3>
+                        <p>Expertise in executing and managing M&A Deals representing the Sell-Side as Exclusive Financial Advisor. Well networked with Private Equities and Strategic Investors in Gulf Region (UAE, KSA, Kuwait, Qatar, Oman, Bahrain).</p>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-icon">🌐</div>
+                        <h3>Strategic Partnerships</h3>
+                        <p>Acting as a dedicated strategic advisor and true partner to your business. Extensive company and sector knowledge gained through numerous transactions in Turkey, GCC, and global markets.</p>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-icon">📊</div>
+                        <h3>Strategic Financial Consultancy</h3>
+                        <p>Conducting accounting and financial reports, implementing innovative cost accounting methods, managing banking relationships, and providing consultancy on Debt to Equity structures.</p>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-icon">🔍</div>
+                        <h3>Operations Management</h3>
+                        <p>Leading and developing business operations across sectors, implementing effective strategies, systems and procedures, and ensuring continuous growth and efficiency.</p>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-icon">📈</div>
+                        <h3>Business Consultancy</h3>
+                        <p>Analyzing business operations to identify and resolve issues with expertise in organizational and financial restructuring, and leading business development functions.</p>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-icon">🌍</div>
+                        <h3>Global Marketing & Research</h3>
+                        <p>Involved in Marketing Plans, Communications and Sales Strategies. Identifying global market opportunities, market expansion strategies, and determining optimal market entry methods.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="values-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">OUR FOUNDATION</span>
+                    <h2>Company Values & Principles</h2>
+                    <p class="section-subtitle">Built on a foundation of integrity, expertise, and client dedication</p>
+                </div>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">🛡️</div>
+                        <h3>Strong Ethical & Moral Values</h3>
+                        <p>Upholding the highest standards of integrity and ethics in all business dealings and client relationships.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">👥</div>
+                        <h3>Client Focused</h3>
+                        <p>Maximizing client benefit and satisfaction by understanding unique needs and delivering tailored solutions.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">🌐</div>
+                        <h3>Think Global; Act Local</h3>
+                        <p>Combining international best practices with deep local market knowledge to deliver effective solutions.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">⏰</div>
+                        <h3>Disciplined Work Schedule</h3>
+                        <p>Sticking to deadlines and maintaining disciplined project management to ensure timely delivery.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">⚡</div>
+                        <h3>Dynamic & Focused</h3>
+                        <p>Being agile, responsive, and results-focused while adapting to changing market conditions.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">💼</div>
+                        <h3>Professional Experience</h3>
+                        <p>Years of experience across multiple markets and sectors, providing comprehensive business solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Career Highlights -->
+        <section id="career" class="career-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">CAREER</span>
+                    <h2>Professional Journey</h2>
+                </div>
+                <div class="career-timeline">
+                    <div class="career-item">
+                        <div class="career-year">2012 - Present</div>
+                        <div class="career-content">
+                            <h3>Managing Director / Owner</h3>
+                            <h4>Global Bridging LLC-FZ & Global Bridging Turkey</h4>
+                            <p>Providing professional intermediary services in Corporate Finance, Franchising, e-commerce Projects, M&A Processes and brand/product/industry know-how transfer. Key achievements include:</p>
+                            <ul>
+                                <li>Exclusive Advisor to Mektebim Egitim Kurumlari in acquisition of 50% stake by SEDCO Holding</li>
+                                <li>Advised Turkish Men's Fashion Retailer for majority sale, receiving Term Sheets worth $396M and $324M</li>
+                                <li>Advisor to Binzagr Group in manufacturing company distribution search</li>
+                                <li>Board Member of leading Bakery Factory and Retail chain group</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="career-item">
+                        <div class="career-year">2017 - Present</div>
+                        <div class="career-content">
+                            <h3>Managing Director / Owner</h3>
+                            <h4>Trade Bridging Mobilya ve Gıda Ürünleri Ltd. Sti</h4>
+                            <p>Managing export services in textile, construction materials, furniture and FMCG. Organizing e-commerce activities and marketplace platform sales.</p>
+                        </div>
+                    </div>
+                    <div class="career-item">
+                        <div class="career-year">2011 - 2012</div>
+                        <div class="career-content">
+                            <h3>General Manager & Head of Finance</h3>
+                            <h4>Altınbaş Holding A.Ş.</h4>
+                            <p>Established new company for Turkish Currency and Commodity Markets. Created Corporate Identity, Marketing Strategy, and built Sales, Operations, Technology, Accounting, and PR Departments.</p>
+                        </div>
+                    </div>
+                    <div class="career-item">
+                        <div class="career-year">2010 - 2011</div>
+                        <div class="career-content">
+                            <h3>Head of Turkish Sales Desk</h3>
+                            <h4>Alpari ME DMCC, Dubai</h4>
+                            <p>Managed Turkish Sales Desk operations generating 30% of company's total profits. Successfully managed retail and corporate client relationships.</p>
+                        </div>
+                    </div>
+                    <div class="career-item">
+                        <div class="career-year">2005 - 2008</div>
+                        <div class="career-content">
+                            <h3>Auditor & Assistant Auditor</h3>
+                            <h4>PricewaterhouseCoopers & Deloitte</h4>
+                            <p>Conducted independent auditing services for financial statements in accordance with IFRS and international standards. Analyzed financial structures and provided advisory services.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Licenses -->
+        <section id="education" class="education-section">
+            <div class="container">
+                <div class="education-grid">
+                    <div class="education-card">
+                        <div class="education-icon">🎓</div>
+                        <h3>Education</h3>
+                        <ul class="education-list">
+                            <li><strong>Executive MBA</strong> - Bogazici University (2013-2014)</li>
+                            <li><strong>MA, Economics in International Development</strong> - American University in Cairo (2009-2011)</li>
+                            <li><strong>BA, Political Science & International Relations</strong> - Bogazici University (2000-2005)</li>
+                        </ul>
+                    </div>
+                    <div class="education-card">
+                        <div class="education-icon">📜</div>
+                        <h3>Capital Market Board Licenses (SPK)</h3>
+                        <ul class="education-list">
+                            <li>Capital Market Activities Level 3 License</li>
+                            <li>Derivative Instruments License</li>
+                            <li>Corporate Governance Rating License</li>
+                            <li>Credit Rating License</li>
+                            <li>Real Estate Appraisal License</li>
+                            <li>Residential Real Estate Appraisal License</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
         <section id="contact" class="contact-section">
             <div class="container">
-                <h2>Contact</h2>
-                <p>Get in touch with us today.</p>
+                <div class="section-header">
+                    <span class="section-label">CONTACT</span>
+                    <h2>Get in Touch</h2>
+                    <p class="section-subtitle">Connect with Figen Kocaman and Global Bridging</p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <h3>Email</h3>
+                        <p><a href="mailto:figen@gbmena.com">figen@gbmena.com</a></p>
+                        <p><a href="mailto:figen@gbturkey.com">figen@gbturkey.com</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <h3>Phone</h3>
+                        <p><a href="tel:+971502074412">+971 50 207 4412</a> (UAE)</p>
+                        <p><a href="tel:+966554124554">+966 55 412 4554</a> (Saudi)</p>
+                        <p><a href="tel:+905325527961">+90 532 552 7961</a> (Turkey)</p>
+                    </div>
+                    <div class="contact-card">
+                        <h3>Office</h3>
+                        <p>Business Center 1, M Floor<br>
+                        The Meydan Hotel<br>
+                        Nad Al Sheba, Dubai<br>
+                        United Arab Emirates</p>
+                    </div>
+                    <div class="contact-card">
+                        <h3>Websites</h3>
+                        <p><a href="https://www.gbmena.com" target="_blank" rel="noopener noreferrer">www.gbmena.com</a> (UAE)</p>
+                        <p><a href="https://www.ggbsa.com" target="_blank" rel="noopener noreferrer">www.ggbsa.com</a> (Saudi)</p>
+                        <p><a href="https://www.gbturkey.com" target="_blank" rel="noopener noreferrer">www.gbturkey.com</a> (Turkiye)</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Figen Kocaman. All rights reserved.</p>
+            <p>&copy; 2024 Figen Kocaman | Global Bridging L.L.C-FZ. All rights reserved.</p>
+            <p class="footer-tagline">Connecting MENA Region with Global Markets</p>
         </div>
     </footer>
 
